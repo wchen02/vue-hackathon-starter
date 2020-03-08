@@ -1,4 +1,4 @@
-# background-noise-frontend
+# vue-hackathon-starter
 
 ## Project setup
 ```
