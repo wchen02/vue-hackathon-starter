@@ -44,18 +44,10 @@
 </template>
 
 <script>
-// import 'bootstrap-social/bootstrap-social.css';
-
 export default {
   name: 'Login',
 };
 </script>
 
 <style lang="scss">
-.btn-social > :first-child, .btn-social-icon > :first-child {
-  // line-height: 1.25 !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  font-size: 38px;
-}
 </style>

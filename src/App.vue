@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// import '@fortawesome/fontawesome-free/js/all';
 import HeaderSection from '@/components/HeaderSection.vue';
 import FooterSection from '@/components/FooterSection.vue';
 import FlashMessage from '@/components/FlashMessage.vue';
@@ -33,6 +32,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "@fortawesome/fontawesome-free/scss/regular";
 @import "@fortawesome/fontawesome-free/scss/solid";
 @import "assets/css/themes/default/default";
+
 // Scaffolding
 // -------------------------
 
