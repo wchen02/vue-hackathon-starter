@@ -1,7 +1,13 @@
 {
-  "name": "background-noise-frontend",
+  "name": "vue-hackathon-starter",
   "version": "0.1.0",
-  "private": true,
+  "description": "A boilerplate for Vue.js single page applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wchen02/vue-hackathon-starter"
+},
+"author": "Wensheng Chen",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
