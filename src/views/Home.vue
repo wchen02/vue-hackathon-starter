@@ -11,7 +11,7 @@
           commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
         p
-          a.btn.btn-secondary(href='#', role='button') View details »
+          a.btn.btn-raised(href='#', role='button') View details »
       .col-sm-6
         h2 Heading
         p.
@@ -19,7 +19,7 @@
           commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
         p
-          a.btn.btn-secondary(href='#', role='button') View details »
+          a.btn.btn-raised(href='#', role='button') View details »
       .col-sm-6
         h2 Heading
         p.
@@ -27,7 +27,7 @@
           commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
         p
-          a.btn.btn-secondary(href='#', role='button') View details »
+          a.btn.btn-raised(href='#', role='button') View details »
       .col-sm-6
         h2 Heading
         p.
@@ -35,7 +35,7 @@
           commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
         p
-          a.btn.btn-secondary(href='#', role='button') View details »
+          a.btn.btn-raised(href='#', role='button') View details »
 </template>
 
 <script>
