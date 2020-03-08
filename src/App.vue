@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// import '@fortawesome/fontawesome-free/js/all';
 import HeaderSection from '@/components/HeaderSection.vue';
 import FooterSection from '@/components/FooterSection.vue';
 import FlashMessage from '@/components/FlashMessage.vue';
@@ -23,12 +24,15 @@ export default {
 </script>
 
 <style lang="scss">
-$fa-font-path: "~@/assets/fonts";
-@import "~@/assets/css/themes/default/variables";
-@import 'bootstrap/scss/bootstrap';
-@import 'font-awesome/scss/font-awesome';
-@import "~@/assets/css/themes/default/default";
-
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "assets/css/themes/default/variables";
+@import "bootstrap/scss/bootstrap";
+@import "@ladjs/bootstrap-social/bootstrap-social.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "assets/css/themes/default/default";
 // Scaffolding
 // -------------------------
 
@@ -40,12 +44,15 @@ html {
 body {
   padding-top: 80px;
   margin-bottom: 75px;
+  font-size: 14px;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 45px;
+  line-height: 45px;
 
   p, ul {
     margin-bottom: 0;
@@ -64,8 +71,85 @@ textarea {
 
 .navbar-nav img {
   width: 30px;
-  height: 30px;
+  min-height: 30px;
   margin: -15px 15px -15px;
+}
+
+.navbar{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.navbar-brand{
+  font-size: 18px;
+  float: left;
+}
+
+.navbar-toggler {
+  position: relative;
+  float: right;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.navbar-toggler-icon {
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  left: initial;
+  right: 0;
+}
+
+// button raised definition
+// this button uses gradient for the background
+$btn-raised-color: rgb(51, 51, 51);
+$btn-raised-background: #f8f8f8;
+$btn-raised-border: rgb(204, 204, 204);
+$enable-gradients: true;
+
+.btn-raised {
+  @include button-variant(
+    $btn-raised-background,
+    $btn-raised-border,
+    $btn-raised-color
+  )
+}
+
+/*
+* Solves Bootstrap 4 issue
+* https://github.com/twbs/bootstrap/issues/25654
+*/
+/* Styles in sm disposition and up */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Solves bs4 bug */
+  .navbar-expand-md > .container,
+  .navbar-expand-lg > .container,
+  .navbar-expand-xl > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Styles in md disposition and up */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Solves bs4 bug */
+  .navbar-expand-lg > .container,
+  .navbar-expand-xl > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Styles in lg disposition and up */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Solves bs4 bug */
+  .navbar-expand-xl > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }
 
 // Alerts
@@ -90,4 +174,17 @@ textarea {
 .fa {
   margin-right: 6px;
 }
+
+.fab {
+  margin-right: 6px;
+}
+
+.fas {
+  margin-right: 6px;
+}
+
+.far {
+  margin-right: 6px;
+}
+
 </style>
